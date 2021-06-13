@@ -72,8 +72,10 @@
   </tbody>
 </table>
 <h1>New book</h1>
+<%= form_with model: @book, local:true do |f| %>
   <h4>Title</h4>
-  <p><%= @book.title %></p>
+  <%= f.text_field :title %>
   <h4>Body</h4>
-  <p><%= @book.body %></p>
-  
+  <%= f.text_area :body %>
+  <%= f.submit 'Create Book' %>
+<% end %>
