@@ -1,6 +1,6 @@
 <h1>EditindBook</h1>
 <% if @book.errors.any? %>
-   error
+   can't be blank error
 <% end %>
 <%= form_with model: @book, local:true do |f| %>
   <h4>Title</h4>
@@ -10,4 +10,4 @@
   <%= f.submit 'Update Book' %>
 <% end %>
 <%= link_to "Show", book_path(@book.id) %>
-<%= link_to "Back", books_path(@book.id) %>
+<%= link_to "Back", books_path %>

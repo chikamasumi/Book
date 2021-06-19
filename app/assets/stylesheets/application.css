@@ -92,3 +92,15 @@ h4 {
   font-family: verdana, arial, helvetica, sans-serif;
   margin-bottom: 0;
 }
+
+div {
+  margin: 30px;
+}
+
+p {
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
